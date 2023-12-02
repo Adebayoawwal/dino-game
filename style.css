@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.dino{
+    background: rgba(190, 123, 35, 0.849);
+    width: 23px;   
+}
+#game{
+     width: 800px;
+     height: 500px;
+     background-color: rgba(190, 123, 35, 0.849);
+     position: relative;
+     left: 200px;
+     top: 30px;
+}
+.sun{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;
+    border-radius: 125px;
+    position: relative;
+    left: 250px;
+}
+.land{
+    width: 800px; 
+    height: 100px;
+    background-color: rgb(219, 154, 70)
+    ;
+    position: relative;
+    top: 100px;
+}
+#character{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(190, 123, 35, 0.849);
+    position: relative;
+    top: 215px;
+}
+.aminate{
+    animation: jump 500ms;
+}
+@keyframes jump{
+    0%{top: 250px;}
+    30%{top: 20px;}
+    70%{top: 20px;}
+    100%{top: 150px;}
+}
+#block{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(131, 89, 35);
+    position: relative;
+    top: 100px;
+    left: 480px;
+    animation: block 1s infinite linear;
+}
+@keyframes block{
+    0%{left: 710px;}
+    100%{left: -8px;}
+}
